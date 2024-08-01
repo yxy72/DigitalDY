@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.79.0 commit date:2018-03-22, commit time:14:10, hash:f4dc9f9d68b</authoring_tool>
+    </contributor>
+    <created>2018-09-03T20:15:36</created>
+    <modified>2018-09-03T20:15:36</modified>
+    <unit name="meter" meter="0.0254"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="holder_top-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1 1 1 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.8588235 0.5647059 0 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="holder_bottom-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1 1 1 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.9372549 0.9372549 0.9372549 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="diverter-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1 1 1 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.2392157 0.2392157 0.2392157 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="holder_top-material" name="holder_top">
+      <instance_effect url="#holder_top-effect"/>
+    </material>
+    <material id="holder_bottom-material" name="holder_bottom">
+      <instance_effect url="#holder_bottom-effect"/>
+    </material>
+    <material id="diverter-material" name="diverter">
+      <instance_effect url="#diverter-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="ID5-mesh" name="ID5">
+      <mesh>
+        <source id="ID5-mesh-positions">
+          <float_array id="ID5-mesh-positions-array" count="78">-6.791339 169.637 -196.8504 -6.791339 146.1111 -196.8504 -13.58268 157.874 -196.8504 6.791339 169.637 -196.8504 6.791339 146.1111 -196.8504 13.58268 157.874 -196.8504 13.58268 157.874 -196.8504 6.791339 146.1111 -108.1382 6.791339 146.1111 -196.8504 13.58268 157.874 -108.1382 -13.58268 157.874 -108.1382 -6.791339 146.1111 -196.8504 -6.791339 146.1111 -108.1382 -13.58268 157.874 -196.8504 -6.791339 169.637 -108.1382 -13.58268 157.874 -196.8504 -13.58268 157.874 -108.1382 -6.791339 169.637 -196.8504 -6.791339 169.637 -108.1382 6.791339 169.637 -196.8504 -6.791339 169.637 -196.8504 6.791339 169.637 -108.1382 6.791339 169.637 -196.8504 13.58268 157.874 -108.1382 13.58268 157.874 -196.8504 6.791339 169.637 -108.1382</float_array>
+          <technique_common>
+            <accessor source="#ID5-mesh-positions-array" count="26" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ID5-mesh-normals">
+          <float_array id="ID5-mesh-normals-array" count="30">0 0 -1 0.8660247 -0.5000012 0 0.8660248 -0.5000012 0 -0.8660247 -0.5000012 0 -0.8660248 -0.5000012 0 -0.8660265 0.4999983 0 -0.8660265 0.4999983 0 0 1 0 0.8660265 0.4999982 0 0.8660265 0.4999984 0</float_array>
+          <technique_common>
+            <accessor source="#ID5-mesh-normals-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ID5-mesh-vertices">
+          <input semantic="POSITION" source="#ID5-mesh-positions"/>
+        </vertices>
+        <triangles material="holder_top-material" count="14">
+          <input semantic="VERTEX" source="#ID5-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ID5-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 0 0 0 3 0 1 0 3 0 4 0 4 0 3 0 5 0 6 1 7 1 8 1 7 2 6 2 9 2 10 3 11 3 12 3 11 4 10 4 13 4 14 5 15 5 16 5 15 6 14 6 17 6 18 7 19 7 20 7 19 7 18 7 21 7 22 8 23 8 24 8 23 9 22 9 25 9</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="ID15-mesh" name="ID15">
+      <mesh>
+        <source id="ID15-mesh-positions">
+          <float_array id="ID15-mesh-positions-array" count="90">-13.58268 157.874 0 -6.791339 146.1111 -108.1382 -6.791339 146.1111 0 -13.58268 157.874 -108.1382 -6.791339 169.637 0 -13.58268 157.874 -108.1382 -13.58268 157.874 0 -6.791339 169.637 -108.1382 6.791339 146.1111 0 -6.791339 146.1111 -108.1382 6.791339 146.1111 -108.1382 -6.791339 146.1111 0 -6.791339 146.1111 0 -6.791339 169.637 0 -13.58268 157.874 0 6.791339 146.1111 0 6.791339 169.637 0 13.58268 157.874 0 -6.791339 169.637 0 6.791339 169.637 -108.1382 -6.791339 169.637 -108.1382 6.791339 169.637 0 13.58268 157.874 -108.1382 6.791339 146.1111 0 6.791339 146.1111 -108.1382 13.58268 157.874 0 6.791339 169.637 -108.1382 13.58268 157.874 0 13.58268 157.874 -108.1382 6.791339 169.637 0</float_array>
+          <technique_common>
+            <accessor source="#ID15-mesh-positions-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ID15-mesh-normals">
+          <float_array id="ID15-mesh-normals-array" count="33">-0.8660247 -0.5000013 0 -0.8660248 -0.5000013 0 -0.8660264 0.4999983 0 -0.8660264 0.4999984 0 0 -1 0 0 0 1 0 1 0 0.8660247 -0.5000013 0 0.8660248 -0.5000013 0 0.8660264 0.4999983 0 0.8660264 0.4999984 0</float_array>
+          <technique_common>
+            <accessor source="#ID15-mesh-normals-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ID15-mesh-vertices">
+          <input semantic="POSITION" source="#ID15-mesh-positions"/>
+        </vertices>
+        <triangles material="holder_bottom-material" count="16">
+          <input semantic="VERTEX" source="#ID15-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ID15-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 3 1 4 2 5 2 6 2 5 3 4 3 7 3 8 4 9 4 10 4 9 4 8 4 11 4 12 5 13 5 14 5 13 5 12 5 15 5 13 5 15 5 16 5 16 5 15 5 17 5 18 6 19 6 20 6 19 6 18 6 21 6 22 7 23 7 24 7 23 8 22 8 25 8 26 9 27 9 28 9 27 10 26 10 29 10</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="ID25-mesh" name="ID25">
+      <mesh>
+        <source id="ID25-mesh-positions">
+          <float_array id="ID25-mesh-positions-array" count="42">-6.791339 146.1111 -108.1382 0 -169.637 -196.8504 0 -169.637 -108.1382 -6.791339 146.1111 -196.8504 6.791339 146.1111 -196.8504 0 -169.637 -196.8504 -6.791339 146.1111 -196.8504 6.791339 146.1111 -196.8504 0 -169.637 -108.1382 0 -169.637 -196.8504 6.791339 146.1111 -108.1382 6.791339 146.1111 -108.1382 -6.791339 146.1111 -108.1382 0 -169.637 -108.1382</float_array>
+          <technique_common>
+            <accessor source="#ID25-mesh-positions-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ID25-mesh-normals">
+          <float_array id="ID25-mesh-normals-array" count="12">-0.9997688 -0.02150374 0 0 0 -1 0.9997688 -0.02150374 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#ID25-mesh-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ID25-mesh-vertices">
+          <input semantic="POSITION" source="#ID25-mesh-positions"/>
+        </vertices>
+        <triangles material="diverter-material" count="6">
+          <input semantic="VERTEX" source="#ID25-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ID25-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 0 0 0 3 0 4 1 5 1 6 1 7 2 8 2 9 2 8 2 7 2 10 2 11 3 12 3 13 3</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Swing_diverter" name="Swing_diverter" type="NODE">
+        <translate sid="location">0 0 0</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <node id="instance_0" name="instance_0" type="NODE">
+          <translate sid="location">0 0 0</translate>
+          <rotate sid="rotationZ">0 0 1 0</rotate>
+          <rotate sid="rotationY">0 1 0 0</rotate>
+          <rotate sid="rotationX">1 0 0 -180</rotate>
+          <scale sid="scale">1 1 1</scale>
+          <instance_geometry url="#ID5-mesh" name="instance_0">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="holder_top-material" target="#holder_top-material"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="instance_0_001" name="instance_0_001" type="NODE">
+          <translate sid="location">0 0 0</translate>
+          <rotate sid="rotationZ">0 0 1 0</rotate>
+          <rotate sid="rotationY">0 1 0 0</rotate>
+          <rotate sid="rotationX">1 0 0 -180</rotate>
+          <scale sid="scale">1 1 1</scale>
+          <instance_geometry url="#ID15-mesh" name="instance_0_001">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="holder_bottom-material" target="#holder_bottom-material"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="instance_0_002" name="instance_0_002" type="NODE">
+          <translate sid="location">0 0 0</translate>
+          <rotate sid="rotationZ">0 0 1 0</rotate>
+          <rotate sid="rotationY">0 1 0 0</rotate>
+          <rotate sid="rotationX">1 0 0 -180</rotate>
+          <scale sid="scale">1 1 1</scale>
+          <instance_geometry url="#ID25-mesh" name="instance_0_002">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="diverter-material" target="#diverter-material"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

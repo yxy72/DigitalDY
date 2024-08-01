@@ -1,0 +1,26 @@
+if(passTime1==5){
+	passTime1 = 0;
+	effciency1 = (double)passProduct1/5*3600;
+	
+	if(effciency!=0){
+		double p = (new Random()).nextDouble();
+		int modify = 0;
+		if(p>0.90){
+			modify+=10;
+			modify-=(new Random()).nextInt(3);
+		}else if(p>0.8){
+			modify-=10;
+			modify+=(new Random()).nextInt(3);
+		}else if(p>0.4){
+			modify+=2;
+			modify-=(new Random()).nextInt(1);
+		}else if(p>0.0){
+			modify-=2;
+			modify+=(new Random()).nextInt(1);
+		}
+		
+		
+		effciency1+=modify;
+	}
+	
+	passProduct1 = 0;
